@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Expand/Collapse FAQ (pura nhi huaa)</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            padding: 9px;
+        }
+        .ans{
+            border: 1px solid red;
+            display: flex;
+            margin: 40px 0px;
+        }
+        .answer{
+            display: none;
+        }
+        .visit{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="qu" class="qu">Q. what is your name ?</h2>
+        <div class="ans">
+            <p>Ans.</p>
+            <p id="answer">Kuldeep</p>
+        </div>
+        <button class="btn" id="button">Answer</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

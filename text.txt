@@ -1,0 +1,15 @@
+Merge two sorted array
+Remove duplicates from an array
+Count the frequence of an element in array
+Two sum
+Fins th Minimum or maximum an array 
+Remove duplicates from sorted array
+Count prime
+Cotainer Duplicates
+Third largest number
+Count odd even number
+Rotate an array
+Find three number with the maximum products
+Minimum number of swaoe to sorted an array
+Find the smallest positive number missing from an
+Median of the sorted array

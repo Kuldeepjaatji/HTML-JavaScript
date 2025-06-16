@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container" role="main" aria-label="Weather application">
+    <h1>Weather App</h1>
+    <form id="search-form" aria-label="Search for city weather">
+      <input type="text" id="city-input" placeholder="Enter city name" aria-required="true" aria-label="City name" />
+      <button type="submit" aria-label="Search weather">Search</button>
+    </form>
+    <div id="result" role="region" aria-live="polite"></div>
+    <footer>Powered by <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo API</a></footer>
+  </div>
+ <script src="index.js"></script>
+</body>
+</html>
+
