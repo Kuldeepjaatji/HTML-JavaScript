@@ -92,3 +92,72 @@ function multiplicationTable(num2) {
 }
 multiplicationTable(19);
 //    multiplicationTable(prompt("Enter your Number"));
+
+
+
+// 8. Calculate the sum of first N natural numbers
+
+
+
+
+function sumNaturalNumbers(n) {
+    console.log((n * (n + 1)) / 2);
+}
+
+// sumNaturalNumbers(prompt("Enter your Number"));
+sumNaturalNumbers(99);
+
+
+
+
+//  9. Reverse a number using a loop
+
+
+// function reverseNumber(num) {
+//     let rev = 0;
+//     while (num > 0) {
+//         rev = rev * 10 + (num % 10);
+//         num = Math.floor(num / 10);
+//     }
+//     console.log(rev);
+// }
+
+
+// reverseNumber(prompt("Enter your Number"));
+// reverseNumber(123456789);
+
+
+
+
+//  10. Find factorial of a number
+
+
+function factorial(n) {
+    let fact = 1;
+    for (let i = 2; i <= n; i++) {
+        fact *= i;
+    }
+    console.log(fact);
+}
+
+//  factorial(prompt("Enter your Number"));
+factorial(10);
+
+
+
+//  12. Find the maximum of three numbers
+
+
+function maxOfThree(a, b, c) {
+    console.log(Math.max(a, b, c))
+}
+
+maxOfThree(1,22,13);
+
+
+// 13. Calculate the power of a number
+
+
+function power(base, exponent) {
+    return Math.pow(base, exponent);
+}
