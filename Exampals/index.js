@@ -161,3 +161,62 @@ maxOfThree(1,22,13);
 function power(base, exponent) {
     return Math.pow(base, exponent);
 }
+
+
+
+
+
+
+
+//   desturecturing
+
+
+const student = {
+    name : "Kuldeep",
+    age :22,
+    role_n : 1,
+}
+const {name ,age,role_n} = student;
+console.log(name);
+console.log(age);
+console.log(role_n);
+
+const {name : username , age : userage , role_n : userrole_n,} = student;
+console.log(username);
+console.log(userage);
+console.log(userrole_n);
+
+// const {username,userage,userrole_n} = student;
+
+
+const person = {
+    Name : "Kuldeep",
+    Age :22,
+}
+const {Name ,Age,marks = 95,} = person;
+
+console.log(marks)
+
+
+const people = {
+    fullName : "Kuldeep jat",
+    mark :92,
+    greet : {
+        firstname: "hemant",
+        lastname: "kumar",
+    }, 
+}
+const {fullName,mark,greet : {firstname,lastname,}} =people;
+
+console.log(fullName);
+console.log(mark);
+console.log(firstname);
+console.log(lastname);
+
+
+
+const display =({name,age,role_n})=>{
+    console.log(`My Name is ${name} and My Age ${age}. this is my role n. : ${role_n}`);
+};
+
+display(student);
