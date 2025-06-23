@@ -220,3 +220,84 @@ const display =({name,age,role_n})=>{
 };
 
 display(student);
+
+
+
+
+
+
+
+
+
+
+
+
+//    array Destructuring
+
+
+
+
+
+
+const number = [1,2,3,4,5,6];
+
+
+
+const[first,second,...rest]=number;
+console.log(rest)
+console.log(first)
+console.log(second)
+// const [a,b,c,d,e,f] = number;
+// console.log(f); 
+// console.log(e); 
+// console.log(d); 
+// console.log(c); 
+// console.log(b); 
+// console.log(a);
+
+
+// const [a,b,,d,e,f] = number;
+
+// console.log(f); 
+// console.log(e); 
+// console.log(d); 
+// console.log(f); 
+// console.log(b); 
+// console.log(a);
+
+
+const [a,b,c,d,e,f,g=50] =number;
+
+console.log(f); 
+console.log(e); 
+console.log(d); 
+console.log(c); 
+console.log(b); 
+console.log(a);
+console.log(g);
+
+
+const kul = [10,[20,30]];
+
+const [x,y]=kul;
+// const [x,[y,z]]=kul;
+
+console.log(x)
+console.log(y)
+// console.log(z)
+
+let p = 10;
+let q = 30;
+
+[p,q]=[q,p]
+console.log(p);
+console.log(q);
+
+
+
+function kuldeep(){
+    return [10,20,30,40,50,60]
+}
+
+
+const [l,m,n,r,s,t]=kuldeep();
