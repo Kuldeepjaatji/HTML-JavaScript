@@ -171,22 +171,22 @@ function power(base, exponent) {
 //   desturecturing
 
 
-const student = {
+const student1 = {
     name : "Kuldeep",
     age :22,
     role_n : 1,
 }
-const {name ,age,role_n} = student;
+const {name ,age,role_n} = student1;
 console.log(name);
 console.log(age);
 console.log(role_n);
 
-const {name : username , age : userage , role_n : userrole_n,} = student;
+const {name : username , age : userage , role_n : userrole_n,} = student1;
 console.log(username);
 console.log(userage);
 console.log(userrole_n);
 
-// const {username,userage,userrole_n} = student;
+// const {username,userage,userrole_n} = student1;
 
 
 const person = {
@@ -219,7 +219,7 @@ const display =({name,age,role_n})=>{
     console.log(`My Name is ${name} and My Age ${age}. this is my role n. : ${role_n}`);
 };
 
-display(student);
+display(student1);
 
 
 
@@ -301,3 +301,60 @@ function kuldeep(){
 
 
 const [l,m,n,r,s,t]=kuldeep();
+
+
+
+
+
+
+
+function Animal(name) {
+    this.name = name;
+}
+
+Animal.prototype.speak = function() {
+    console.log(this.name + " makes a sound");
+};
+
+function Dog(name, breed) {
+    Animal.call(this, name);
+    this.breed = breed;
+}
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+
+Dog.prototype.bark = function() {
+    console.log(this.name + " barks");
+};
+
+let dog1 = new Dog("Tommy", "Labrador");
+dog1.speak();
+dog1.bark(); 
+
+
+
+
+
+
+
+
+function student(name,marks){
+    this.name=name;
+    this.marks = marks;
+}
+student.prototype.marks = function(){
+    console.log('My name is your name : ',this.name);
+    console.log('My marks is your name : ',this.marks);
+}
+
+let k1 = new student('Kuldeep',99);
+let k2 = new student('Hemant',98);
+let k3 = new student('ketan',97);
+let k4 = new student('yovraj',99);
+
+
+k1.marks();
+k2.marks();
+k3.marks();
+k4.marks();
